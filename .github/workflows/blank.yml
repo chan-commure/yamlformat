@@ -33,4 +33,4 @@ jobs:
       - name: Run a multi-line script
         run: >
           echo -n
-          "test, and deploy your project. ${{ github.sha }}"
+          "test, and deploy your project. $(git rev-parse --short HEAD)"
